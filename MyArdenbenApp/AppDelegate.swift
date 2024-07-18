@@ -1,0 +1,57 @@
+//
+//  AppDelegate.swift
+//  MyArdenbenApp
+//
+//  Created by Roland Carlyle on 16.07.2024.
+//
+
+import UIKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        print("System is ready to be Launched")
+        return true
+    }
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        print("System Launched")
+        return true
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("System is Active")
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        print("System fell asleep")
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        print("System is on the Background")
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        print("System is ready to be moved to Foreground")
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        print("System is closed")
+    }
+    
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+
+
+}
+
